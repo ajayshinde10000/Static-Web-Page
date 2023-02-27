@@ -335,6 +335,15 @@ nav img
     }
 }
 
+@media all and (max-width: 1200px) {
+    .faqImg
+    {
+        width: 366px;
+       height: 366px;
+    }
+}
+
+
 .accordion-button:not(.collapsed)::after {
     background-image: url("https://lh3.googleusercontent.com/uNu-9rtn3yJ5qUl6nE7t9Rf0RD5PwCDi7_7qeWdgOzQeD_z1a9QNX7qFI83oRpUAfUwpUM8v7STV7gAdGlSo1eu6=w128-h128-e365-rj-sc0x00ffffff");
   }
@@ -504,11 +513,6 @@ nav img
     border-bottom: 1px solid #D9D9D9;
 }
 
-.border-bottom{
-    margin-left: -20px;
-    width: 120%;
-}
-
 .box12{
     display: flex;
 }
@@ -551,7 +555,7 @@ nav img
         width: 55%;
         background-color: #e9d8e8;
         border-radius: 50%;
-        margin-left: 200px;
+        margin-left: 20%;
     }
 
     .homeHeading{
