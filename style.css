@@ -2,12 +2,15 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  overflow: visible;
 }
+
 .primaryBtn {
-  width: 80%;
-  height: 20%;
+ 
   background-color: #52c8c4;
   border: none;
+ 
+  overflow-wrap: break-word;
 }
 
 .secondaryBtn {
@@ -28,7 +31,7 @@ body {
 nav img {
   width: 123px;
   height: 45px;
-  margin-left: 8px;
+  margin-left: 50px;
 }
 
 .btn1 {
@@ -43,11 +46,60 @@ nav img {
   font-family: Arial, Helvetica, sans-serif;
   padding: 0 10px 0px;
 }
+
+.box12 {
+  display: flex;
+}
+
+.left {
+  width: 45%;
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.right {
+  width: 55%;
+  background-color: #e9d8e8;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.right img {
+  width: 96%;
+  height: 96%;
+}
+
+@media screen and (max-width: 1200px) {
+  .box12 {
+    display: flex;
+    flex-direction: column-reverse;
+    padding-bottom: 50px;
+    padding-top: 50px;
+  }
+
+  .right {
+    width: 55%;
+    background-color: #e9d8e8;
+    border-radius: 50%;
+    margin-left: 20%;
+  }
+
+  .homeHeading {
+    font-size: 64px;
+    font-weight: 700;
+  }
+}
+
+
 .home {
   background-image: url("images/hero_bg.svg");
-  background-repeat: no-repeat;
-  background-position: center;
   background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 .home .homeSubHeading {
   color: #47c4c0;
@@ -56,25 +108,23 @@ nav img {
   font-size: 80px;
   font-weight: 700;
 }
-
+/* 
 .box {
   background-image: url("images/hero_img_bg.png");
-  /* background-color: rgb(243, 224, 245); */
+  background-color: rgb(243, 224, 245); 
   width: 87%;
   height: 100%;
   padding-left: 5px;
   border-radius: 50%;
-}
+} */
 
-.inventory {
-  margin-top: 40px;
+.homeContent {
+  
   background-image: url("images/feature_bg.svg");
   background-position: center;
   background-size: cover;
 }
-.homeContent {
-  margin-bottom: 80px;
-}
+
 
 .homeContent img {
   width: 63px;
@@ -87,6 +137,27 @@ nav img {
   background-color: #6990ff;
   overflow: visible;
 }
+
+.inventoryNumber{
+ 
+    font-weight: 600;
+    font-size: 60px;
+    line-height: 1em;
+    color: transparent;
+    -webkit-text-stroke: 1px #52C8C4;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    opacity: 0.3;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+
+}
+
+.inventoryNumber:hover{
+  opacity: 0.6;
+}
+
 .aboutHead {
   margin-top: 150px;
 }
@@ -95,9 +166,12 @@ nav img {
   color: #47c4c0;
 }
 
+#aboutSection{
+  background: linear-gradient(257.51deg, #F2FCFE 44.07%, #FAF1FE 100%);
+}
+
 .aboutContent {
-  margin-top: 100px;
-  margin-bottom: 100px;
+  
   background-color: #6990ff;
   color: white;
   padding: 25px;
@@ -140,7 +214,7 @@ nav img {
 }
 
 .features {
-  background-color: #f6f4ff;
+  background-image: url('images/feature_bg.svg');
 }
 
 .featuresImage {
@@ -157,8 +231,7 @@ nav img {
 }
 
 .featuresContent {
-  margin-top: 150px;
-  margin-bottom: 150px;
+  background: linear-gradient(257.51deg, #F2FCFE 44.07%, #FAF1FE 100%);
 }
 
 .featuresContent-retailImages img {
@@ -486,51 +559,6 @@ nav img {
   border-bottom: 1px solid #d9d9d9;
 }
 
-.box12 {
-  display: flex;
-}
-
-.left {
-  width: 45%;
-  display: flex;
-  align-items: center;
-  margin: 10px 0;
-}
-
-.right {
-  width: 55%;
-  background-color: #e9d8e8;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 10px 0;
-}
-
-.right img {
-  width: 95%;
-  height: 95%;
-}
-
-@media screen and (max-width: 1200px) {
-  .box12 {
-    display: flex;
-    flex-direction: column-reverse;
-    padding-bottom: 50px;
-  }
-
-  .right {
-    width: 55%;
-    background-color: #e9d8e8;
-    border-radius: 50%;
-    margin-left: 20%;
-  }
-
-  .homeHeading {
-    font-size: 64px;
-    font-weight: 700;
-  }
-}
 
 .inventoryCard {
   margin-top: 20px;
@@ -598,10 +626,140 @@ nav img {
     }
 }
 
+
 .anchor_offset::before {
     display: block;
     content: ' ';
-    height: 6em;
-    width: 100%;
     visibility: hidden;
   }
+
+  nav{
+    max-width: 1600px;
+    min-width: 340px;
+    margin: 0 auto;
+  }
+
+  .svgImg{
+    width: 35px;
+    height: 35px;
+    background-color: #ffffff;
+    border:1px solid #6990FF;
+    position: absolute;
+    border-radius: 50%;
+   right: 0;
+   bottom: 0;
+  }
+
+  .svgImg svg{
+    width : 19px;
+    height: 15px;
+    margin: 8px 7px;
+    color: #6990FF;
+  }
+
+  .card1:hover, .card2:hover, .card3:hover, .card4:hover, .card5:hover, .card6:hover, .card7:hover, .card8:hover, .card9:hover{
+    cursor: pointer;
+    
+  }
+  .card1:hover .svgImg, .card2:hover .svgImg, .card3:hover .svgImg, .card4:hover .svgImg, .card5:hover .svgImg, .card6:hover .svgImg, .card7:hover .svgImg, .card8:hover .svgImg, .card9:hover .svgImg{
+    color: white !important;
+    background-color: #6990FF;
+    
+  }
+  .card1:hover .svgImg svg, .card2:hover .svgImg svg, .card3:hover .svgImg svg, .card4:hover .svgImg svg, .card5:hover .svgImg svg, .card6:hover .svgImg svg, .card7:hover .svgImg svg, .card8:hover .svgImg svg, .card9:hover .svgImg svg{
+    color: white !important;
+   
+  }
+
+
+  .featureBox1, .featureBox2, .featureBox3, .featureBox4, .featureBox5, .featureBox6{
+    box-shadow: 0px 10px 50px rgb(28 37 40 / 7%);
+    border-radius: 10px;
+    background-color: #fff;
+    padding: 40px 30px 37px 30px;
+  }
+
+  .featuresPadding{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  }
+
+  .marginHeight95-70{
+    height: 95px;
+  }
+
+  .marginHeight75-45{
+    height: 75px;
+  }
+
+  .marginHeight50-40{
+    height: 50px;
+  }
+
+  .marginHeight25-0{
+    height: 25px;
+  }
+.marginHeight25{
+  height: 25px;
+}
+
+.marginHeight100-70{
+  height: 100px;
+}
+
+.marginHeight75-45{
+  height: 75px;
+}
+.marginHeight75-70{
+  height: 75px;
+}
+
+  @media screen and (max-width: 1200px){
+    .marginHeight95-70{
+      height: 70px;
+    }
+
+    .marginHeight75-45{
+      height: 45px;
+    }
+
+    .marginHeight50-40{
+      height: 40px;
+    }
+    .marginHeight25-0{
+      height: 0px;
+    }
+    .marginHeight100-70{
+      height: 70px;
+    }   
+    .marginHeight75-45{
+      height: 45px;
+    }
+    .marginHeight75-70{
+      height: 70px;
+    }
+  }
+
+@media screen and (min-width: 1199px) {
+
+  .box12{
+    padding-top: 20px;
+    padding-bottom: 50px;
+  }
+  
+}
+
+@media screen and (max-width: 550px) {
+
+nav img {
+  width: 58px;
+  height: 45px;
+  padding-left: 0px;
+  margin-left: 0px;
+}
+  
+}
+
+.phoneNo{
+  margin-left: 32px;
+  padding-left: 30px;
+}
