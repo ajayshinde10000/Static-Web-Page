@@ -62,17 +62,18 @@ nav img {
 
 .box12 {
   display: flex;
+  justify-content: space-between;
 }
 
 .left {
-  width: 45%;
+  /* width: 45%; */
   display: flex;
   align-items: center;
   padding: 10px 0;
 }
 
 .right {
-  width: 55%;
+  /* width: 55%; */
   background-color: #e9d8e8;
   border-radius: 50%;
   display: flex;
@@ -95,10 +96,11 @@ nav img {
   }
 
   .right {
-    width: 55%;
+    /* width: 55%; */
     background-color: #e9d8e8;
     border-radius: 50%;
-    margin-left: 20%;
+    /* margin-left: 20%; */
+    margin-bottom: 30px;
   }
 
   .homeHeading {
@@ -264,6 +266,10 @@ nav img {
   display: flex;
 }
 
+.featuresContentBox {
+  padding-left: 80px;
+}
+
 @media screen and (max-width: 960px) {
 
   .featuresContent-retailImages{
@@ -271,8 +277,8 @@ nav img {
     justify-content: center;
   }
 
-  .featuresContentBox {
-    padding-left: 0px;
+  .featuresContentBox{
+    padding-left:0px;
   }
   
 }
@@ -284,10 +290,6 @@ nav img {
 
 .featuresContent-retailImages p {
   margin: 10px 0 0 15px;
-}
-
-.featuresContentBox {
-  padding-left: 80px;
 }
 
 @media only screen and (max-width: 1200px) and (min-width: 960px)  
@@ -415,7 +417,7 @@ nav img {
   }
 }
 
-@media all and (max-width: 768px) {
+@media all and (max-width: 767px) {
   .pricingBox3Card3 {
     display: none;
   }
@@ -452,12 +454,6 @@ nav img {
   }
 }
 
-@media all and (max-width: 1200px) {
-  .faqImg {
-    width: 366px;
-    height: 366px;
-  }
-}
 
 .accordion-button:not(.collapsed)::after {
   background-image: url("https://lh3.googleusercontent.com/uNu-9rtn3yJ5qUl6nE7t9Rf0RD5PwCDi7_7qeWdgOzQeD_z1a9QNX7qFI83oRpUAfUwpUM8v7STV7gAdGlSo1eu6=w128-h128-e365-rj-sc0x00ffffff");
@@ -653,7 +649,7 @@ nav img {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .customerHideCol1 {
     display: none;
   }
@@ -661,7 +657,6 @@ nav img {
   .customerShowCol {
     width: 100%;
     height: 100%;
-    margin-left: 5%;
   }
 }
 
