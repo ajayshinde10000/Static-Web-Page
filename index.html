@@ -24,10 +24,10 @@
     <!-- Navbar Started Here -->
 
     <div class="container-fluid px-0 sticky-top bg-light">
-      <div class="w-100">
+     <div class="container">
         <div class="row">
           <div class="col">
-            <nav class="navbar navbar-expand-xl bg-light ps-5 p-2 pb-2">
+            <nav class="navbar navbar-expand-xl bg-light p-2 pb-2">
               <div class="container-fluid mb-2 mt-2">
                 <a
                   class="navbar-brand"
@@ -126,7 +126,7 @@
             </nav>
           </div>
         </div>
-      </div>
+</div>
     </div>
 
     <!-- Navbar Ended Here -->
@@ -595,13 +595,16 @@
         </div>
 
         <!-- Right Box -->
-        <div class="col-sm-12 col-xl-6 d-flex justify-content-center">
-          <div class="row featuresContent-retailImages">
+        <div class="col-sm-12 col-xl-6">
+
+          <div>
+
+          <div class="row featureContentPadding">
             <!-- col 1 -->
             <div
-              class="col-md-6 my-5 d-flex justify-content-center text-wrap text-break featuresContentBox"
+              class="col-md-6 my-5 featuresContentBox"
             >
-              <div class="d-flex">
+              <div class="featuresContent-retailImages">
                 <div>
                   <img
                     src="images/retail_icon_1.svg"
@@ -617,9 +620,9 @@
 
             <!-- col 2 -->
             <div
-              class="col-md-6 my-5 d-flex justify-content-center text-wrap text-break featuresContentBox"
+              class="col-md-6 my-5 featuresContentBox"
             >
-              <div class="d-flex">
+              <div class="featuresContent-retailImages">
                 <div>
                   <img
                     src="images/retail_icon_2.svg"
@@ -634,8 +637,8 @@
             </div>
 
             <!-- col 3 -->
-            <div class="col-md-6 my-5 d-flex text-wrap text-break justify-content-center">
-              <div class="d-flex">
+            <div class="col-md-6 my-5">
+              <div class="featuresContent-retailImages">
                 <div>
                   <img
                     src="images/retail_icon_3.svg"
@@ -650,8 +653,8 @@
             </div>
 
             <!-- col 4 -->
-            <div class="col-md-6 my-5 d-flex text-wrap text-break justify-content-center">
-              <div class="d-flex">
+            <div class="col-md-6 my-5">
+              <div class="featuresContent-retailImages">
                 <div>
                   <img
                     src="images/retail_icon_4.svg"
@@ -667,9 +670,9 @@
 
             <!-- col 5 -->
             <div
-              class="col-md-6 my-5 d-flex justify-content-center text-wrap text-break featuresContentBox"
+              class="col-md-6 my-5 featuresContentBox"
             >
-              <div class="d-flex">
+              <div class="featuresContent-retailImages">
                 <div>
                   <img
                     src="images/retail_icon_5.svg"
@@ -685,9 +688,9 @@
 
             <!-- col 6 -->
             <div
-              class="col-md-6 my-5 d-flex justify-content-center text-wrap text-break featuresContentBox"
+              class="col-md-6 my-5 featuresContentBox"
             >
-              <div class="d-flex">
+              <div class="featuresContent-retailImages">
                 <div>
                   <img
                     src="images/retail_icon_6.svg"
@@ -702,6 +705,10 @@
             </div>
           </div>
         </div>
+
+
+      </div>
+
       </div>
 
       <div class="marginHeight75-70"></div>
@@ -723,7 +730,7 @@
       <div class="container pricingBox1">
         <div class="row row-cols-1 row-cols-md-3 g-4">
           <!-- first Col -->
-          <div class="col-md-4 col-sm-12 pricingCard1">
+          <div class="col-lg-4 col-md-12 pricingCard1">
             <div class="card p-3 border-0">
               <div class="d-flex">
                 <div>
@@ -824,7 +831,7 @@
           </div>
 
           <!-- Second column -->
-          <div class="col-md-4 col-sm-12 pricingCard2">
+          <div class="col-lg-4 col-md-12 pricingCard2">
             <div class="card border-0 p-3">
               <div class="d-flex">
                 <div>
@@ -910,7 +917,7 @@
           </div>
 
           <!-- Third Column -->
-          <div class="col-md-4 col-sm-12 pricingCard3">
+          <div class="col-lg-4 col-md-12 pricingCard3">
             <div class="card p-3 border-0">
               <div class="d-flex">
                 <div>
@@ -2718,49 +2725,41 @@
           <div class="col-xl-6 col-sm-12">
             <p class="fs-5 fw-bold mt-2">Please fill up the form</p>
 
-            <div class="row">
-              <div class="col">
-                <input
-                  type="text"
-                  class="form-control ps-4 ms-4 border-0"
-                  placeholder="Name"
-                  aria-label="First name"
-                />
-              </div>
-              <div class="col">
-                <input
-                  type="text"
-                  class="form-control ps-4 ms-4 border-0"
-                  placeholder="Email Address"
-                  aria-label="Last name"
-                />
-              </div>
-
-              <div class="row">
-                <div class="col">
-                  <input
-                    type="text"
-                    class="form-control ps-4 ms-4 mt-5 border-0"
-                    placeholder="Phone Number"
-                    aria-label="First name"
-                  />
+            <form>
+              <div class="row mx-3">
+                <div class="col-xl-6 col-md-12 my-4">
+                  <input type="text" class="form-control border-0" placeholder="Name">
                 </div>
-              </div>
+                <div class="col-xl-6 col-md-12 my-4">
+                  <input type="text" class="form-control border-0" placeholder="Email Address">
+                </div>
 
-              <textarea
-                class="form-control phoneNo mt-5 border-0"
+                <div class="col-md-12 my-4">
+                  <input type="text" class="form-control  border-0" placeholder="Phone Number">
+                </div>
+
+                <div class="col-md-12 my-4">
+                  <textarea
+                class="form-control border-0"
                 placeholder="Write Your Massage"
                 id="floatingTextarea2"
                 style="height: 100px"
               ></textarea>
+                </div>
 
-              <button
+                <div class="col-md-12">
+                  <button
                 type="button"
-                class="btn btn-primary ms-4 mt-5 myBtn secondaryBtn"
+                class="btn btn-primary myBtn secondaryBtn"
               >
                 Send Message
               </button>
-            </div>
+                </div>
+
+              </div>
+            </form>
+            <!-- Recrating Form Here -->
+
           </div>
 
           <div class="pricingBox4Height-95"></div>

@@ -35,7 +35,16 @@ html,body{
 nav img {
   width: 123px;
   height: 45px;
-  margin-left: 50px;
+  margin-left: -35px;
+}
+
+@media screen and (max-width: 590px) 
+{
+  nav img {
+    width: 87px;
+    height: 32px;
+    margin-left: -15px;
+  }
 }
 
 .btn1 {
@@ -111,15 +120,6 @@ nav img {
   font-size: 80px;
   font-weight: 700;
 }
-/* 
-.box {
-  background-image: url("images/hero_img_bg.png");
-  background-color: rgb(243, 224, 245); 
-  width: 87%;
-  height: 100%;
-  padding-left: 5px;
-  border-radius: 50%;
-} */
 
 .homeContent {
   background-image: url("images/feature_bg.svg");
@@ -231,6 +231,23 @@ nav img {
   background: linear-gradient(257.51deg, #f2fcfe 44.07%, #faf1fe 100%);
 }
 
+.featuresContent-retailImages{
+  display: flex;
+}
+
+@media screen and (max-width: 960px) {
+
+  .featuresContent-retailImages{
+    display: flex;
+    justify-content: center;
+  }
+
+  .featuresContentBox {
+    padding-left: 0px;
+  }
+  
+}
+
 .featuresContent-retailImages img {
   width: 69px;
   height: 52px;
@@ -241,7 +258,14 @@ nav img {
 }
 
 .featuresContentBox {
-  padding-left: 140px;
+  padding-left: 80px;
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 960px)  
+{
+  .featureContentPadding{
+    padding-left: 100px;
+  }
 }
 
 .pricing-section {
@@ -749,15 +773,6 @@ nav {
   .box12 {
     padding-top: 20px;
     padding-bottom: 50px;
-  }
-}
-
-@media screen and (max-width: 550px) {
-  nav img {
-    width: 58px;
-    height: 45px;
-    padding-left: 0px;
-    margin-left: 0px;
   }
 }
 
