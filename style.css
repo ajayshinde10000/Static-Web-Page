@@ -1,3 +1,8 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
   margin: 0;
   padding: 0;
@@ -754,4 +759,8 @@ nav {
 .phoneNo {
   margin-left: 32px;
   padding-left: 30px;
+}
+
+html,body{
+  overflow-x: hidden;
 }
