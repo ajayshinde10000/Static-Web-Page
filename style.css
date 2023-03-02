@@ -749,6 +749,10 @@ nav {
   height: 75px;
 }
 
+.marginHeight100{
+  height: 100px;
+}
+
 @media screen and (max-width: 1200px) {
   .marginHeight95-70 {
     height: 70px;
