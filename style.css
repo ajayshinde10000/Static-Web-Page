@@ -790,3 +790,21 @@ nav {
   margin-left: 32px;
   padding-left: 30px;
 }
+
+
+@media screen and (max-width:1199px){
+  #navbarSupportedContent li {
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 0px;
+    margin-left: -100px;
+  }
+}
+
+@media screen and (max-width:600px) {
+  #navbarSupportedContent li {
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 0px;
+    margin-left: -80px;
+  }
+  
+}
