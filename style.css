@@ -366,7 +366,7 @@ nav img {
 }
 
 .pricingBox3 {
-  background-image: url("assets/img/feature_bg.svg");
+  background-image: url("images/feature_bg.svg");
 }
 .clientCrousel:hover {
   cursor: url("images/drag.png") 16 9, ew-resize !important;
@@ -806,5 +806,16 @@ nav {
     padding-left: 0px;
     margin-left: -80px;
   }
-  
+}
+
+.or{
+  position: relative;
+}
+.or p{
+  width: 40px;
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  transform: translateY(-125%);
+  background-color: white;
 }
